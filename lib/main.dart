@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled23/asosiy.dart';
 
 void main(){
   runApp(MaterialApp(home: MyApp(), debugShowCheckedModeBanner: false,));
@@ -103,7 +104,8 @@ class _MyAppState extends State<MyApp> {
             print(son);
           }
           if(son == parol){
-            son= "To'gri";
+            Navigator.push(context, MaterialPageRoute(builder: (_)=>AsosApp()));
+            son= "";
           } else if(son.length == 4 && son != parol){
             son="";
           }
