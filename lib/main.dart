@@ -34,6 +34,7 @@ class _MyAppState extends State<MyApp> {
               showDialog(context: context, builder: (_)=> AlertDialog(
                 title: Text("Ilovani o'chirasizmi"),
                 actions: [
+
                   TextButton(onPressed: (){
                     Navigator.pop(context);
                   }, child: Text("Yo'q")),
